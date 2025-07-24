@@ -1,0 +1,23 @@
+<h3>Exemplo 03 - Diretiva ngFor e Pipes</h3>
+
+<div class="alert alert-primary">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let p of pessoas">
+                <td>{{ p.nome | uppercase}}</td>
+                <td>{{ p.idade }}</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+
+</div>
