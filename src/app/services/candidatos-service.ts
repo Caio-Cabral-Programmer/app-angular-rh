@@ -17,4 +17,10 @@ export class CandidatosService {
     return this.http.get<Candidato[]>(`${this.baseUrl}/${url}`);
   }
 
+  // método para adicionar um novo candidato
+  public postCandidatoApi(candidato: Candidato) : Observable<Candidato> {
+    const url = `${this.baseUrl}/incluir`;
+    return this.http.post<Candidato>(url, candidato);
+  }
+
 }
